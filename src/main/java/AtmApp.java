@@ -8,6 +8,7 @@ public class AtmApp {
 
 		Scanner input = new Scanner(System.in);
 		NumberFormat money = NumberFormat.getCurrencyInstance(Locale.US);
+		System.out.println("Hello World!");
 
 		Atm myAtm = new Atm(100);
 
