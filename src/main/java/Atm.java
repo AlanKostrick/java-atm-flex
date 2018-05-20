@@ -4,13 +4,17 @@ public class Atm {
 	private int balance;
 	private String requiredPin = "1234";
 
-	public Atm(int balance) {
-		this.balance = balance;
-	}
-
 	public int getBalance() {
 
 		return balance;
+	}
+
+	public String getRequiredPin() {
+		return requiredPin;
+	}
+
+	public Atm(int balance) {
+		this.balance = balance;
 	}
 
 	public void withdraw(int amount) {
@@ -38,10 +42,6 @@ public class Atm {
 			return false;
 		}
 
-	}
-
-	public String getRequiredPin() {
-		return requiredPin;
 	}
 
 }
